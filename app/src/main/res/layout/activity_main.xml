@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/nhatrang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/txtten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <EditText
+            android:id="@+id/txtsdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nhập số điện thoại của bạn"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="THÀNH VIÊN"
+            android:textColor="#FF0000"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+
+        <TableRow
+            android:paddingTop="20dp">
+
+            <RadioGroup android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnvip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIP"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="182dp" />
+
+                <RadioButton
+                    android:id="@+id/rbtnthuong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THUONG"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="217dp"
+                    tools:layout_editor_absoluteY="182dp" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="LOẠI"
+            android:textColor="	#3CB371"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="244dp" />
+
+        <TableRow
+            android:paddingTop="20dp">
+
+            <RadioGroup android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtngiuong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GIUONGNAM"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="80dp"
+                    tools:layout_editor_absoluteY="291dp" />
+
+                <RadioButton
+                    android:id="@+id/rbtnghe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GHENGOI"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="217dp"
+                    tools:layout_editor_absoluteY="290dp" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <CheckBox
+            android:textSize="20sp"
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="DICHVU"
+            android:textColor="#800080"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="349dp" />
+
+        <TableRow
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="THANH TOÁN"
+                android:textColor="#00FFFF"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="418dp" />
+
+            <Spinner
+                android:textSize="18sp"
+                android:id="@+id/spinner"
+                android:layout_width="142dp"
+                android:layout_height="30dp"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="409dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/btncancle"
+                android:layout_width="41dp"
+                android:text="CANCEL"
+                android:textColor="#D2691E"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="499dp" />
+
+            <Button
+                android:id="@+id/btnbook"
+                android:text="OK"
+                android:textColor="#008B8B"
+                tools:layout_editor_absoluteX="192dp"
+                tools:layout_editor_absoluteY="498dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
